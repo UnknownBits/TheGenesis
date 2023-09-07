@@ -1,0 +1,3 @@
+[submodule "TheGenesis.Core"]
+	path = TheGenesis.Core
+	url = https://github.com/UnknownBits/TheGenesis.Core.git
