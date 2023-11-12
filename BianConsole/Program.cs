@@ -1,3 +1,6 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using BianConsole.Data;
 
 namespace BianConsole
 {
@@ -6,6 +9,8 @@ namespace BianConsole
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<UserContext>(options =>
+                options.UseSqlite(builder.Configuration.GetConnectionString("BianConsoleContext") ?? throw new InvalidOperationException("Connection string 'BianConsoleContext' not found.")));
 
             // Add services to the container.
 
