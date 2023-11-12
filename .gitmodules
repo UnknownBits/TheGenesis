@@ -1,3 +1,6 @@
 [submodule "TheGenesis.Core"]
 	path = TheGenesis.Core
 	url = https://github.com/UnknownBits/TheGenesis.Core.git
+[submodule "TheGenesis.Minecraft"]
+	path = TheGenesis.Minecraft
+	url = https://github.com/UnknownBits/TheGenesis.Minecraft.git
